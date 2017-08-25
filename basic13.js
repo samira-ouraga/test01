@@ -1,0 +1,171 @@
+
+// print all num 
+function Print1To255(){
+    for (i=1; i<=255; i++){
+      console.log(i);
+    }
+  }
+  
+  Print1To255();
+  
+  // print int 
+  function PrintIntsAndSum0To255(){
+    var sum = 0;
+    for (var i = 0; i<=255 ; i++){
+      sum += i;
+      console.log(sum);
+    }
+  }
+  
+  PrintIntsAndSum0To255();
+  
+  // print max 
+  function PrintMaxOfArray(arr){
+  arr = [267,306,108];
+  var largestNum = 0;
+  for(i=0;i<=arr.length;i++) {
+    if(arr[i]>largestNum){
+      largestNum = arr[i];
+    }
+  }
+  console.log(largestNum);
+  }
+  
+  PrintMaxOfArray();
+  
+  
+  // print odd numbers 
+  function ReturnOddsArray1To255(arr){
+    arr = [];
+    for ( i = 1; i <= 255 ; i++){
+      if (i%3 === 0){
+    arr.push(i);
+      }
+    }
+    return arr 
+  }
+  ReturnOddsArray1To255();
+  
+  // greater than Y 
+  function ReturnArrayCountGreaterThanY(arr, Y){
+    var count = 0;
+    for (var i =0; i< arr.length; i++){
+      if (arr[i]>Y){
+        count++ ;
+      }
+      
+    }
+    return count;
+  }
+  ReturnArrayCountGreaterThanY([2,3,4,8,23,12,45,67], 7);
+  
+  // max, min, avg 
+  function PrintMaxMinAverageArrayVals(arr){
+    var maxVal=0;
+    var minVal =0;
+    var avgVal=0;
+    for (var i = 0; i<arr.length; i++){
+      if (arr[i] > maxVal){
+        maxVal = arr[i];
+        
+      }
+      if (arr[i] < minVal){
+        minVal = arr[i];
+      }
+      if(minVal<maxVal){
+    
+    avg=((maxVal+minVal)/2);
+      }
+    }
+    console.log("the max value is "  +  maxVal);
+    console.log("the min value is " + minVal);
+    console.log("the average is " +  avgVal);
+  }
+  PrintMaxMinAverageArrayVals([0,3,2,5,12,34,56,67]); 
+    
+  // swap 
+  function SwapStringForArrayNegativeVals(arr){
+    for (var i =0; i< arr.length; i++){
+      if (arr[i] < 0 ){
+        arr[i] = "Dojo";
+      }
+    }
+    console.log(arr);
+  }
+  SwapStringForArrayNegativeVals([3,4,5,-3,-5,-45,67,54,32]);
+   
+  // odd
+  function PrintOdds1To255(){
+    for (var i=0; i<=255; i++){
+      if (i%3 ===0){
+      console.log (i);
+      }
+    }
+  }
+  
+  PrintOdds1To255();
+  
+  //iterate
+  
+  function PrintArrayVals(arr){
+    for (var i =0; i<arr.length; i++){
+      
+    }
+    console.log (arr);
+  }
+  
+  PrintArrayVals([3,4,5,67,12,23]);
+  
+  //print avg 
+  
+  function PrintAverageOfArray(arr){
+    var avg = 0 ; 
+    var sum =0;
+    for (var i=0; i<arr.length; i++){
+      sum += arr[i];
+    }
+    console.log(avg = ((sum)/2));
+  }
+  PrintAverageOfArray([4,4,9]);
+  
+  //squarre it
+  function SquareArrayVals(arr){
+    var squarre = 0 ; 
+  
+    for (var i=0; i<arr.length; i++){
+      squarre = Math.pow(i,2);
+    }
+    console.log(squarre);
+  }
+  SquareArrayVals([4,4]);
+  
+  //zeroOut
+  
+  function ZeroOutArrayNegativeVals(arr){
+    for (var i =0; i< arr.length; i++){
+      if (arr[i] < 0 ){
+        arr[i] = 0;
+      }
+    }
+    console.log(arr);
+  }
+  ZeroOutArrayNegativeVals([3,4,-9,45,-34,9]);
+  
+  // SHIFT it 
+  function ShiftArrayValsLeft(arr){
+    for (var i =1; i< arr.length ; i++){
+      arr[i-1] = arr[i];
+    }
+  return arr;
+  }
+  ShiftArrayValsLeft([43,1,3,4,5,6,7,8,0]);
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  

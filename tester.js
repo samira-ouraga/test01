@@ -73,7 +73,6 @@ function addingArr(arr){
     return theSum;
 }
 console.log(addingArr([2,3,4,5,6,78]));
-}*/
 function addingArr(arr){
     var theSum =0;
     var number;
@@ -89,3 +88,62 @@ function addingArr(arr){
 }
 console.log(addingArr([2,3,4,"5",6,"t",78]));
 
+
+function countdown (num){
+    var array = [];
+    for (var i=num; i>=0; i--){
+        array.push(i);
+        
+    }
+    console.log(array);
+    return array;
+}
+countdown(21);
+
+function sumPlusLength(arr){
+    var sum=0;
+    for (var i=0; i<arr.length; i++){
+        sum+= arr[i];
+    }
+    sum  +=  arr.length;
+    console.log(sum)
+    return sum;
+}
+sumPlusLength([1,2])
+
+function valueGreaterThan (arr){
+    var array = [];
+    for (var i=0; i<arr.length; i++){
+        if ( arr[i]>arr[1]){
+            array.push(arr[i]);
+        }
+    }
+    console.log(array);
+    return array;
+    
+}
+
+valueGreaterThan ([2,3,5,7])
+}
+
+function randomswap(arr){
+    for (var i=0; i<arr.length; i++){
+        temp = arr[i];
+        tempPosition = Math.floor(Math.random()*arr.length);
+        arr[i]= arr[tempPosition];
+        arr[tempPosition]=temp;
+    }
+
+    return arr;
+}
+ var totalArray = [0,0,0,0];
+for (var i=0; i<50000; i++){
+var shuffle = randomswap([1,2,3,4]);
+
+for (var j =0; j<4 ; j++){
+    totalArray[j] += shuffle[j]
+}
+ 
+}
+ console.log(totalArray);
+ */
